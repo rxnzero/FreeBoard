@@ -1,0 +1,11 @@
+body,p,ol,ul,td
+{
+	font-family: ±¼¸²;
+	font-size: 12px;
+}
+
+input { font:9pt ±¼¸²; BACKGROUND-COLOR:#F2F7F5;border:1px solid rgb(196,217,208);}
+textarea { font:9pt ±¼¸²; BACKGROUND-COLOR:#FFFFF4;border:1px solid rgb(234,226,202); }
+
+a:link {  color:#0033CC; text-decoration: none}
+a:visited {  color:#990099; text-decoration: none}

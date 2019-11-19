@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+<display-name>FreeBoard</display-name>
+  <description>
+     dhlee FreeBoard
+  </description>
+  <!-- parameters in a POST request -->
+ <filter>
+        <filter-name>setCharacterEncodingFilter</filter-name>
+        <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>EUC-KR</param-value>
+        </init-param>
+ </filter>
+
+  <!-- The mapping for the Set Character Encoding Filter -->
+  <filter-mapping>
+        <filter-name>setCharacterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <servlet-name>FileDownload</servlet-name>
+    <servlet-class>dhlee.board.servlet.FileDownload</servlet-class>
+    <init-param>
+        <param-name>upload</param-name>
+        <param-value>c:/temp/upload</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>BoardSave</servlet-name>
+    <servlet-class>dhlee.board.servlet.BoardSave</servlet-class>
+    <init-param>
+        <param-name>upload</param-name>
+        <param-value>c:/temp/upload</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>FileDownload</servlet-name>
+    <url-pattern>/download</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>BoardSave</servlet-name>
+    <url-pattern>/BoardSave</url-pattern>
+  </servlet-mapping>
+  
+	<resource-ref>
+		<description>FreeBoard Oracle Datasource</description>
+		<res-ref-name>jdbc/boardDS</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+		
+<!-- JSPC servlet mappings start
+	<taglib>
+       <taglib-uri>http://java.sun.com/jsp/jstl/core</taglib-uri>
+       <taglib-location>/WEB-INF/tlds/c.tld</taglib-location>
+   </taglib>
+   <taglib>
+       <taglib-uri>http://java.sun.com/jsp/jstl/sql</taglib-uri>
+       <taglib-location>/WEB-INF/tlds/sql.tld</taglib-location>
+  </taglib>
+ -->
+
+<!-- JSPC servlet mappings end -->
+    <welcome-file-list>
+      <welcome-file>index.jsp</welcome-file>
+      <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+<!--    
+ 	<error-page>
+        <error-code>500</error-code>
+        <location>/server_error.html</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404.html</location>
+    </error-page>
+ -->
+</web-app>
