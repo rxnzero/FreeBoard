@@ -4,19 +4,6 @@ import java.text.*;
 import java.util.*;
 import java.io.*;
 
-/**
- *<PRE>
- * Filename : Utils.jsava   <BR>
- * Class    : Utils        <BR>
- * Function : utility        <BR>
- * Comment  : 개발에 필요한 공통 유틸리티모음  <BR>
-
- *</PRE>
- * @version	1.0.1
- * @author	Copyright (c) 2001 by At Soft Corp. All Rights Reserved.
- */
-
-
 public class Utils
 {
     protected static Utils m_instance;

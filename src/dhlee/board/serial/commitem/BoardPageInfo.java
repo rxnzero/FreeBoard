@@ -1,17 +1,5 @@
 package dhlee.board.serial.commitem;
 
-/**
- * <pre>
- * Filename	: BoardPageInfo.java						<br>
- * Class	: BoardPageInfo								<br>
- * Function	: BoardPageInfo	Message						<br>
- * Comment	: 게시판 조회를 위한 Message Class			<br>
- * History	: 07/25/2001, sungho n. pak v1.0.0, Create 	<br>
- * </pre>
- *
- * @version	1.0.0
- * @author 	Copyright (c) 2001 by At Soft Corp. All Rights Reserved.
- */
 public class BoardPageInfo implements java.io.Serializable
 {
 	private static final int defaultNumPerPage = 10;

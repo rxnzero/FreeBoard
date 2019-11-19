@@ -1,17 +1,5 @@
 package dhlee.lib.util;
 
-
-/**
- * <pre>
- * Filename : HFormat2.java		<br>
- * Class    : HFormat2			<br>
- * Function : utility			<br>
- * Comment  : a collection of methods that are useful in converting strings.	<br>
- * </pre>
- *
- * @version	1.0.0
- * @author	rxnzero.
- */
 public final class HFormat2
 {
 	/**

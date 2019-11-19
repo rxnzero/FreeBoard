@@ -11,10 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import dhlee.board.io.*;
 import dhlee.board.serial.commitem.*;
 import dhlee.board.db.*;
-/**
- * @author rxnzero
- *
- */
+
 public class BoardSave extends HttpServlet {
 	private String fileSaveDir;
     

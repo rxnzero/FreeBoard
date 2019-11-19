@@ -3,21 +3,6 @@ package dhlee.lib.db;
 import java.util.*;
 import java.sql.*;
 
-/**
- * <PRE>
- * Filename	: URSet.java 														<BR>
- * Class	: URSet 															<BR>
- * Function	: 																	<BR>
- * Comment	: ResultSet을 Vector형태로 바꾸어준다. 								<BR>
- * History	: 10/25/1999, 김현찬, v1.0, 최초작성 								<BR>
- *            12/20/1999, 김현찬, v1.1, sort된것에 한해서 group 시키는거 추가 	<BR>
- *            03/31/2000, 김정우, v1.2, move() method 추가 						<BR>
- *            10/06/2000, 김기원, v1.3, null을 zero space로 return				<BR>
- * </PRE>
- * @version	1.3
- * @author 	Kim Hyun Chan
- * @company	Copyright (c) 2000 by At Soft Corp. All Rights Reserved.
- */
 public class URSet {
 	/**
 	 * DB의 조회결과를 저장하는 Vector 자료형

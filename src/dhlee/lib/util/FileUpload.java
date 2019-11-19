@@ -5,21 +5,6 @@ import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
-/**
- * <PRE>
- * Filename	: FileUpload2.java <BR>
- * Class	: FileUpload2 <BR>
- * Function	: <BR>
- * Comment	: FileUpload 용. <BR>
- *            	파라미터를 순서없이 받을 수 있다.			<BR>
- *				readForm을 수행과 동시에 file이 업로드된다.	<BR>
- * History	: 2000/09/19, 이동훈<BR>
- * </PRE>
- * @version	1.2
- * @company 	Copyright (c) 2000 by At Soft Corp. All Rights Reserved.
- * @author 	이동훈
- */
-
 public class FileUpload {
 
 	final static int INIT_VECTOR_CAPACITY = 3; // Vector 초기 용량

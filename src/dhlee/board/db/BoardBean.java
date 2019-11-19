@@ -25,10 +25,6 @@ import dhlee.lib.util.*;
 // User Defined Class Import
 import dhlee.board.serial.commitem.BoardItem;
 
-/**
- * @author rxnzero
- *
- */
 public class BoardBean {
 	protected final Log logger = LogFactory.getLog(getClass());
 	public static final boolean VERBOSE = true;	// 디버깅하는데 사용하도록 함...
